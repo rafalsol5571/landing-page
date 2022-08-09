@@ -1,0 +1,212 @@
+/* Variables */
+$logo-font:'The Nautigal';
+$main-font:"Montserrat";
+$main-font-color:#ffffff;
+$logo-color:#ecc236;
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+body {
+    margin:0;
+    font-family:$main-font;
+}
+nav .row {
+    margin:0;
+    width:fit-content;
+    align-self: center;
+    width:100%;
+}
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    width:100%;
+    background-position: center center;
+    background-size: cover;
+}
+.container {
+    height:100%;
+}
+nav {
+    padding-top:2rem;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.logo {
+    display:flex;
+    justify-content:center;
+    font-family:$logo-font, cursive;
+    color:$logo-color;
+    font-size:3.2rem;
+}
+.navigation {
+    display:flex;
+    padding-top:1rem;
+    list-style-type: none;
+    margin: 0;
+    font-size:1.2rem;
+    justify-content:center;
+    padding-left:0px;
+}
+.navigation li {
+    display:inline-block;
+    margin-left:1.5rem;
+}
+.navigation li a {
+    text-decoration:none;
+    color:$main-font-color;
+    text-transform:uppercase;
+}
+.banner-content {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    color:$main-font-color;
+    padding:28vh 0;
+}
+.banner-content h1{
+    font-size:6rem;
+    margin-top:0;
+}
+.banner-content h2{
+    font-size:4rem;
+    font-style:italic;
+    font-weight:normal;
+    margin-top:0;
+}
+.banner-button {
+    background-color:$logo-color;
+    text-transform:uppercase;
+    color:$main-font-color;
+    border: none;
+    padding: 1.5rem 4.5rem;
+    text-align: center;
+    display:inline-block;
+    border-radius: 0.2rem;
+    font-size:1.4rem;
+    font-weight:bold;
+}
+.our-portfolio {
+    padding-bottom:8rem;
+}
+.section-header {
+    padding:5rem 0;
+    text-align:center;
+    justify-content:center;
+    font-family:$main-font;
+}
+.section-header h1 {
+    font-size:2.6rem;
+    text-transform:uppercase;
+    margin:0;
+}
+.section-header h2 {
+    font-size:1rem;
+    margin:0.7rem 0;
+    color:grey;
+    font-style:italic;
+}
+.services-content {
+    text-align:center;
+    padding-bottom:4rem;
+}
+.services-content i {
+    color:$logo-color;
+    display: inline-block;
+    border-radius: 125px;
+    box-shadow: 0 0 0 5px $logo-color;
+    padding: 0.5em 0.5em;
+}
+.services-content h6 {
+    font-size:1.1rem;
+    margin:0;
+    padding:1.7rem 0;
+}
+.services-content p {
+    margin:0;
+}
+.our-portfolio {
+    background-color:#e6e6e6;
+}
+.card {
+    background-color:$main-font-color;
+    margin-bottom:2rem;
+}
+.card-img {
+    width:100%;
+    height:233px;
+}
+.card-body {
+    text-align:center;
+}
+.card-body h1{
+    margin:0;
+    padding:1rem 0 0 0;
+}
+.card-body p {
+    color:grey; 
+    margin:0;
+    padding:0.4rem 0 1rem 0;
+}
+.footer-media {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left:5rem;
+}
+.footer-media li{
+    display:inline-block;
+}
+.footer-content {
+    padding: 2.7rem 0;
+}
+.footer-media i {
+    font-size: 25px;
+    background: grey;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: $main-font-color;
+    border-radius: 50%;
+    text-align:center;
+}
+.footer-content div:first-of-type {
+    text-align:center;
+    justify-content:center;
+    line-height: 5rem;
+}   
+@media (max-width: 994px) and (max-width: 1200px)  {
+    .card-img {
+        max-height:200px;
+    }
+    .footer-media {
+        text-align:center;
+        justify-content:center;
+        padding-left:0;
+    }
+}
+@media (max-width: 600px)  {
+    .navigation{
+        align-items:center;
+        flex-direction:column;
+    }
+    .navigation li {
+        line-height: 3.5rem;
+        margin-left: 0px;
+    }
+    .banner-content {
+        padding:14vh 0;
+    }
+    .banner-content h2 {
+        font-size:2rem;
+    }
+    .banner-content h1 {
+        font-size:4rem;
+    }
+    .footer-content div:first-of-type {
+        line-height:3rem;
+    }
+}
